@@ -1,2 +1,14 @@
 # CS-340
 Classwork submitted for SNHU CS-340
+
+```
+How do you write programs that are maintainable, readable, and adaptable? Especially consider your work on the CRUD Python module from Project One, which you used to connect the dashboard widgets to the database in Project Two. What were the advantages of working in this way? How else could you use this CRUD Python module in the future?
+
+How do you approach a problem as a computer scientist? Consider how you approached the database or dashboard requirements that Grazioso Salvare requested. How did your approach to this project differ from previous assignments in other courses? What techniques or strategies would you use in the future to create databases to meet other client requests?
+
+What do computer scientists do, and why does it matter? How would your work on this type of project help a company, like Grazioso Salvare, to do their work better?
+```
+  The work of a computer scientist is to implement solutions for given problems. In this project, the fictional organization Grazioso Salvare presented the following problem: a set of data from animal shelters in the Austin area and a need to filter and present the data for a way to intuitively search for dogs that would be prime candidates for rescue training. By following a set of best practices, a computer scientist can effectively implement a solution no matter what the given problem is. These best practices begin with understanding and quantifying the problem, clarifying the problem where any confusion or assumptions may lie, dividing the problem into a subset of smaller tasks or procedures, implementing those procedures, and evaluating the implementation against our well-defined understanding of what the problem requires. 
+  In this course, as I have done in all my courses, I began this project by examining the requirements and use case first, ensuring I understood what the intended outcome of the project would be. We were told to create a python module that would serve as the CRUD (Create, Read, Update, and Delete) interface to our database, which allowed us to re-use this code in the dash web application by importing it. This made joining the existing code to any new code easy. For instance, the web application code template called a "read" method on the CRUD class, whereas I had implemented a "query" method. Rather than rename the method and break existing compatibility, I was able to create a wrapper method named 'read' that invoked the query method with the correct arguments and did its own input validation to comply with the new API. We see the advantages of modular programming here in the ability to adapt and reuse smaller procedures to work towards the goal of a larger task, without a heavy investment of labour time. 
+
+  Overall, this class was not as unenjoyable as I may have thought. I don't typically enjoy working with python, but it was bearable when used on such a trivial task.
